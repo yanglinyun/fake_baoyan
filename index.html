@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fake_baoyan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+            
+        }
+        nav{
+            float: left;
+            width: 170px;
+            background-color: #3A4B53;
+            padding-top: 25px;
+            height: 1000px;  
+            /* text-align: center; */
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        li{
+            
+            list-style: none;
+            
+            height: 33px;
+            line-height: 33px;
+        }
+        li > a{
+            color:white;
+            font-weight: bold;
+        }
+        .container{
+            position: relative;
+            margin: 0 auto;
+            width: 1000px;
+            height: 1000px;  
+            border: 2px solid #F1F1F1;
+        }
+        nav li{
+            border-top: 1px solid #55666E;
+            padding-left: 20px;
+        }
+        .content{
+            float: right;
+            width: 780px;
+            padding: 30px 17px 0 33px;
+        }
+        .info{
+            width: 784px;
+           
+            border: 2px solid #F1F1F1;  
+        }
+        .title{
+            height: 33px;
+            line-height: 33px;
+            background-color: #F8F8F8;
+            padding-left: 10px;
+            font-size: 14px;
+            position: relative;
+           
+        }
+        .content ul{
+            text-align: center;
+            border-top: 2px solid #F1F1F1;
+            border-bottom: 2px solid #F1F1F1;
+            padding: 10px 0 10px 0;
+        }
+        .content ul li{
+            height: 30px;
+            line-height: 30px;
+        }
+        .agree{
+           
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 9px;
+            position: relative;
+        }
+        .isagree{
+            position: relative;
+            margin: 0 auto;
+            margin-top: 13px;
+            margin-bottom: 30px;
+            padding: 12px;
+            background-color: #E0F2F6;
+            font-size: 9px;
+            width: 687px;
+            border-bottom: 2px solid #F1F1F1;
+        }
+        .isagree::before{
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            transform: rotateZ(-45deg);
+            background-color: #E0F2F6;
+            border-bottom: 2px solid #F1F1F1;
+            position: absolute;
+            left: 30px;
+            top: -5px;
+        }
+        .myagree{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            text-align: center;
+            
+            padding: 7px 22px 7px 22px;
+            background-color: #C8CDD3;
+        }
+        .notice{
+            padding-top: 23px;
+            font-size: 14px;
+        }
+        .input{
+            position: fixed;
+            margin: 0 auto;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: skyblue;
+            border-radius: 10px;
+            border: 5px solid green;
+            z-index: 100;
+            width: 80%;
+            text-align: center;
+            
+        }
+        
+        input{
+            height: 40px;
+            line-height: 40px;
+            margin: 10px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        input:focus{
+            border: 3px solid skyblue;
+            border-radius: 10px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
+            border-radius: 10px;
+            margin-left: 10px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <ul>
+                <br>
+                单位:<input type="text">
+                <br>
+                院系:    <input type="text">
+                <br>
+                专业:    <input type="text">
+                <br>
+                研究方向:<input type="text">
+                <br>
+                <button id="btn">确认</button>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">> 报名注意事项</a></li>
+                <li><a href="">> 填报个人信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">1.基本信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">2.个人照片</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">3.户档信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">4.学习工作信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">5.学籍学历信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">6.学位信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">7.联系信息</a></li>
+                <li><a href="" style="font-size:12px; padding-left: 1em;">8.入伍信息</a></li>
+                <li><a href="">> 网上缴费</a></li>
+                <li><a href="">> 我的志愿</a></li>
+                <li><a href="">> 我的复试通知</a></li>
+                <li style="background-color:#63CA95"><a href="" >> 我的待录取通知</a></li>
+                <li><a href="">> 我的消息</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="info">
+                <div class="title" style="color:#6C9E95;">志愿信息</div>
+                <ul>
+                    <li><span style="font-weight: bold;">层次: </span><span>硕士</span></li>
+                    <li><span style="font-weight: bold;">单位: </span><span class="school"></span></li>
+                    <li><span style="font-weight: bold;">院系: </span><span class="college"></span></li>
+                    <li><span style="font-weight: bold;">专业: </span><span class="major"></span></li>
+                    <li><span style="font-weight: bold;">学习方式: </span><span>全日制</span></li>
+                    <li><span style="font-weight: bold;">研究方向: </span><span class="research"></span></li>
+                    <li><span style="font-weight: bold;">导师: </span><span>不区分导师</span></li>
+                    <li><span style="font-weight: bold;">专项计划类型: </span><span>非专项计划</span></li>
+                    <li><span style="font-weight: bold;">就业类型: </span><span>非定向就业</span></li>
+                </ul>
+                <div class="title"><span style="color:#BBA961;">待录取通知 </span><span style="font-size:9px;    font-size: 9px;
+                    position: absolute;
+                    top: 0px;
+                    left: 9.5em;    ">接受或拒绝录取通知后, 将无法更改</span></div>
+                <div class="agree">
+                    <span class="school"></span> 招生办 <span class="numTime"></span>
+                    
+                    <div class="isagree">
+                        <p>
+                            经复试考核,你已被<span class="school"></span>拟录取! 请务必与24小时内登录中国研究生招生信息网推免系统点击确认录取通知如有疑问请执行027-67861445.
+                        </p>
+                            <div class="myagree">
+                            <span style="display: inline-block;width: 17px;height: 17px;border-radius: 50%;background-color: #006F00;color:white;text-align: center;line-height: 17px;font-weight: bold;">✔</span>
+                            您于<span class="month"></span>月<span class="day"></span>日 <span class="time"></span>接受了<span class="school"></span>待录取通知
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notice">
+                <b>注意事项:</b>
+                <br>
+                <br>1.最终推免生名单、录取名单和推免生学籍注册均以“推免服务系统”备案信息为准。推荐高校公示推免生名单并向“推免服务系统”备案，招生单位按规定公示录取名单并向“推免服务系统”备案。
+                <br>2.10月8日起，推免生通过“推免服务系统”进行注册并填报个人资料信息。10月12日-10月25日，推免生通过“推免服务系统”填报志愿、接收并确认招生单位的复试及待录取通知。
+                <br>3.“推免服务系统”中推荐办法、推免生名单、复试录取办法及录取推免生名单等备案公开的推免招生信息，均由各推荐高校、招生单位提供，并按教育部有关规定在推荐高校和招生单位网站进行了公开公示。考生如有疑问，可直接与相关推荐高校、招生单位联系咨询或向推荐高校、招生单位所在省级教育招生考试机构申诉。
+                <br>4.当年推免生可在规定时限内查看本人报考并参加复试的招生单位相关专业的同层次、同类别推免生录取名单及相关录取信息。
+            </div>
+            
+        </div>
+        <div style=" clear: both;"></div>
+    </div>
+</body>
+<script>
+
+        var school ="";
+        var college = "";
+        var major= "";
+        var research = "";
+
+        var btn = document.getElementById('btn');
+        var inputBox = document.getElementsByClassName('input')[0];
+        btn.addEventListener("click",function()
+        {
+            
+            var inputAll = document.getElementsByTagName('input');
+            school = inputAll[0].value;
+            college = inputAll[1].value;
+            major = inputAll[2].value;
+            research = inputAll[3].value;
+            inputBox.style.display="none";
+            modifyAll("school",school);
+            modifyAll("major",major);
+            modifyAll("college",college);
+            modifyAll("research",research);
+            var myDate = new Date();
+            var year = myDate.getFullYear();  // 获取完整的年份(4位,1970-????)
+            var month = myDate.getMonth()+1;    // 获取当前月份(0-11,0代表1月)
+            var day = myDate.getDate();    // 获取当前日(1-31)
+            var hour = myDate.getHours();    // 获取当前小时数(0-23)
+            var minte = myDate.getMinutes();   // 获取当前分钟数(0-59)
+            modifyAll("numTime",year+'-'+month+'-'+day+' '+hour+'-'+minte);
+            modifyAll("time",hour+':'+minte);
+            modifyAll("year",year);
+            modifyAll("month",month);
+            modifyAll("day",day);
+
+
+        });
+        
+        function modifyAll(cur_class,value)
+        {
+            var allClass = document.getElementsByClassName(cur_class);
+            for(var i=0; i<allClass.length; i++)
+            {
+                allClass[i].innerText = value;
+            }
+        }
+        
+        
+
+
+</script>
+
+</html>
